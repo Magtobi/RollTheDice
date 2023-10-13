@@ -13,16 +13,22 @@ public class RollTheDice {
             int roll2 = dice.roll();
             int sum = roll1 + roll2;
 
-            System.out.println("Roll " + (i + 0) + ": " + roll1 + "+" + roll2 + "=" + sum);
+            System.out.println("Roll " + (i + 0) + ": " + roll1 + " + " + roll2 + " sum: " + sum);
 
-            if (sum == 2) {
-                count2++;
-            } else if (sum == 4) {
-                count4++;
-            } else if (sum == 6) {
-                count6++;
-            } else if (sum == 7) {
-                count7++;
+
+            switch (sum) {
+                case 2:
+                    count2++;
+                    break;
+                case 4:
+                    count4++;
+                    break;
+                case 6:
+                    count6++;
+                    break;
+                case 7:
+                    count7++;
+                    break;
             }
         }
         System.out.println("Number of times 2 was rolled: " + count2);
