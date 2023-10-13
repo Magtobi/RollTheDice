@@ -8,12 +8,12 @@ public class RollTheDice {
         int count6 = 0;
         int count7 = 0;
 
-        for (int i = 0; i < 20; i++) {
+        for (int i = 0; i <= 100; i++) {
             int roll1 = dice.roll();
             int roll2 = dice.roll();
             int sum = roll1 + roll2;
 
-            System.out.println("Roll " + (i + 1) + ":" + roll1 + "+" + roll2 + "=" + sum);
+            System.out.println("Roll " + (i + 0) + ": " + roll1 + "+" + roll2 + "=" + sum);
 
             if (sum == 2) {
                 count2++;
